@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>wiki Valley</title>
+
+    <!--google fonts roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--css do projeto-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-color-header">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img  src="./images/logo.png" alt="logo" class="img-fluid">
+                <spam>Berserk</spam>
+            </a>
+            <button 
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-items"
+                aria-controls="navbar-items"
+                aria-expanded="false"
+                aria-label="Navegação resumida"
+                >
+                <i-bi class="bi-list"></i-bi>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" >home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projetos" class="nav-link">projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">sobre</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">contato</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+</header>
+<body>
+
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="3000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+                <button
+                    type="button"
+                    class="active"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4">
+                </button>
+            </section>
+
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="./images/1136.png" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 1</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/613359.jpg" alt="Imagem 2" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 2</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/764519.jpg" alt="Imagem 3" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 3</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/790729.jpg" alt="Imagem 4" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 4</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+                
+            </section>
+       
+            <button type="button"
+            class="carousel-control-prev"
+            data-bs-target="#slider"
+            data-bs-slide="prev">
+            <i class="bi bi-chevron-compact-left"></i>
+            </button:button>
+
+            <button type="button"
+            class="carousel-control-next"
+            data-bs-target="#slider"
+            data-bs-slide="next">
+            <i class="bi bi-chevron-compact-right"></i>
+            </button:button>
+        </section>
+        <section class="col-12" id="mini-banner">
+            <section class="row">
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-clipboard2"></i>
+                        <section class="card-body">
+                            <h1>Modal 1</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores inventore aspernatur nemo cumque! Vero harum veniam quasi cumque quibusdam quos aspernatur. Aliquid commodi sequi nulla obcaecati placeat et quo.</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Itens de missões</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa explicabo, fugit odit cumque, tempora recusandae quas aspernatur repellendus repudiandae, ducimus maiores. Esse doloremque reiciendis saepe sint illum hic molestiae.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-calendar4-week"></i>
+                        <section class="card-body">
+                            <h1>modal 2</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eius laudantium est repudiandae error. Cum excepturi tempore non ratione earum nam eveniet vero, qui omnis, sit dolorum accusamus quisquam ex.</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">A</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum facilis, delectus tempore rerum aperiam velit voluptates nostrum unde sapiente molestias debitis ullam mollitia cum inventore temporibus numquam officiis. Repellendus.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cpu-fill"></i>
+                        <section class="card-body">
+                            <h1>modal 3</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea dolor dignissimos voluptates, neque quas sapiente, rem quae adipisci unde totam? Maiores exercitationem reiciendis quaerat fuga consequatur. Accusamus, dignissimos. Velit.</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">B</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino pepino 
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-map"></i>
+                        <section class="card-body">
+                            <h1>modal 4</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla esse voluptas explicabo saepe iusto. Rem, consectetur consequuntur! Soluta ratione deleniti deserunt possimus, consequuntur, obcaecati optio inventore voluptates nemo perspiciatis eaque!</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal4">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">pepino</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam at consectetur tempore deleniti, eligendi beatae, quod, quos atque magnam soluta est eveniet ratione amet iusto corrupti voluptatem dolor minima repellendus.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+                <!--final dos cards-->
+
+            </section>
+        </section>
+    </section>
+
+    <!--destaques-->
+    <!--inicio do conteiner-->
+
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color texto-primario" id="projetos">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1136.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+    </section>
+    <!-- Vertically centered modal -->
+
+
+    <!--inicio do sobre-->
+    <div class="container">
+        <div class="row container-sobre">
+            <div class="col-md-6 d-inline-flex justify-content-center"><img src="./images/sobre.png" alt="" class="img-fluid"></div>
+            <div class="col-md-6">
+                <h2 id="sobre" class="text-center">Sobre</h2>
+                <p class="text-center">"Berserk" é uma popular série de mangá japonesa criada por Kentaro Miura. A história segue o protagonista Guts, um guerreiro mercenário, enquanto ele luta em um mundo medieval sombrio e brutal. O mangá é conhecido por sua violência gráfica, temas sombrios e complexos, bem como sua arte altamente detalhada.</p>
+
+            </div>
+            
+        </div>
+
+        <div class="row container-sobre">
+            
+            <div class="col-md-6">
+                <h2 class="text-center">história</h2>
+                <p class="text-center">A história é ambientada em um mundo medieval sombrio e violento, repleto de conflitos, guerra e seres sobrenaturais. A narrativa gira em torno do protagonista, Guts, um guerreiro mercenário com um passado trágico e uma história de lutas e batalhas cruéis.
+
+                    A trama de "Berserk" é conhecida por sua complexidade e profundidade. Ela explora temas como vingança, amizade, destino, sacrifício e a luta do protagonista para encontrar seu lugar em um mundo repleto de demônios e entidades misteriosas. O cenário sombrio e a arte incrivelmente detalhada de Kentaro Miura são características marcantes da série, que ganhou reconhecimento global.</p>
+            </div>
+            <div class="col-md-6"><img src="./images/764519.jpg" alt="" class="img-fluid"></div>
+        </div>
+        <div class="row container-sobre">
+            <div class="col-md-6"><img src="./images/764519.jpg" alt="" class="img-fluid"></div>
+            <div class="col-md-6">
+                <h2 class="text-center">Autor</h2>
+                <p class="text-center">O autor de "Berserk" é Kentaro Miura. Kentaro Miura é um renomado mangaká japonês, nascido em 11 de julho de 1966, e ele é conhecido principalmente por sua obra mais famosa, "Berserk". Miura criou a série "Berserk" e trabalhou nela desde o início, lançando o mangá em 1989.
+
+                    Infelizmente, Kentaro Miura faleceu inesperadamente em 6 de maio de 2021, deixando os fãs e a comunidade de mangá em luto. Sua morte levantou preocupações sobre o futuro da série "Berserk", uma vez que a obra permaneceu inacabada naquele momento. A série ganhou um grande número de fãs ao longo dos anos e é amplamente considerada uma das obras mais influentes e impactantes no mundo dos mangás devido à sua narrativa complexa e à arte altamente detalhada de Miura.</p>
+            </div>
+        </div>
+    </div>
+    <!--final do sobre-->
+
+    <!--inicio contato-->
+    <div class="row" id="footer">
+        
+        <div class="col-md-6">
+            <h1 class="text-center text" id="contato">Entre em contato</h1>
+            <center>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+              </center>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><h4>Digite seu email</h4></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h4>Digite seu texto</h4></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-outline-dark">Enviar email</button>
+                  </div>
+              </div>
+              
+        </div>
+        <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.4416085296793!2d-48.50296625594431!3d-20.934773567848538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbe469e09506f1%3A0x336e767ffea97cdf!2sSesi-SP!5e0!3m2!1spt-BR!2sbr!4v1698426309537!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe></div>
+    </div>
+    <!--final contato-->
+<!--bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer></script>
+</body>
+</html>
